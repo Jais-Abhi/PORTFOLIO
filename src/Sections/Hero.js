@@ -1,6 +1,8 @@
 import React from 'react'
 import memojiImage from  "@/assets/images/memoji-computer.png"
 import Image from 'next/image'
+import { FaArrowDown } from "react-icons/fa";
+
 
 const Hero = () => {
   return (
@@ -21,12 +23,16 @@ const Hero = () => {
               User Experiences
             </div>
             <div className=' text-center text-gray-400 mt-6 max-w-xl ' >
-              I specialized in transforming designs into high-quality code, ensuring seamless user experiences across web and mobile platforms.
+              I specialize in transforming design concepts into clean, scalable, and high-quality code. With a strong focus on performance, responsiveness, and accessibility, I build seamless user experiences that work flawlessly across web and mobile platforms using modern development practices.
             </div>
             <div className=' mt-8 flex gap-4 text-[1.2rem] font-semibold ' >
               <button
-              className='border-2 border-gray-500 px-4 py-2 rounded-lg '  >
+              className='border-2 border-gray-500 px-4 py-2 rounded-lg flex justify-center items-center
+               '  >
                 Explore My Work
+                  {/* <Image src={downArrow} alt="Down Arrow" width={20} height={20} className='inline-block justify-center items-center font-bold' style={{filter: 'brightness(0) invert(1)'}} /> */}
+
+                  <FaArrowDown className='text-white flex justify-center items-center ml-2' />
 
                 </button>
               <button 
