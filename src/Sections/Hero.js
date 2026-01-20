@@ -2,17 +2,27 @@ import React from 'react'
 import memojiImage from  "@/assets/images/memoji-computer.png"
 import Image from 'next/image'
 import { FaArrowDown } from "react-icons/fa";
+import { IoStarSharp } from "react-icons/io5";
+import Ring from '@/Components/Ring';
 
 
 const Hero = () => {
   return (
     <div className=' relative w-full h-screen overflow-x-hidden flex justify-center items-center' >
+      <div className=' absolute inset-0 -z-10 border-2 border-red-800 ' >
+        <IoStarSharp className="absolute top-1/2 left-1/2 translate-x-[10rem] md:translate-x-[18rem]"/>
+        <IoStarSharp className="absolute top-1/2 left-1/2 rotate-45 translate-x-[10rem] md:translate-x-[18rem]"/>
+        <IoStarSharp className="absolute top-1/2 left-1/2 translate-x-[10rem] md:translate-x-[18rem]"/>
+        <IoStarSharp className="absolute top-1/2 left-1/2 translate-x-[10rem] md:translate-x-[18rem]"/>
+        <IoStarSharp className="absolute top-1/2 left-1/2 translate-x-[10rem] md:translate-x-[18rem]"/>
+
+      </div>
           <div className='absolute inset-0 -z-10  ' >
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[20rem] md:size-[37rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10  size-[30rem] md:size-[52rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10  size-[40rem] md:size-[67rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10  size-[50rem] md:size-[82rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10  size-[60rem] md:size-[95rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+         <Ring size="20rem" mdSize="37rem" />
+         <Ring size="30rem" mdSize="52rem" />
+         <Ring size="40rem" mdSize="67rem" />
+         <Ring size="50rem" mdSize="82rem" />
+         <Ring size="60rem" mdSize="95rem" />
           </div>
         <div className=' container flex flex-col justify-center items-center  '>
           <Image src={memojiImage} alt="Memoji at Computer" width={100} height={100}  
