@@ -6,26 +6,34 @@ import { FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className='flex justify-center items-center' >
-        <div className='container flex flex-col justify-center items-center'>
-          <Image src={memojiImage.src} alt="Memoji at Computer" width={100} height={100}  
-          className=' pt-40 '
+    <div className=' relative w-full h-screen overflow-x-hidden flex justify-center items-center' >
+          <div className='absolute inset-0 -z-10 top-[10rem] ' >
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[37rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[52rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[67rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[82rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[95rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          </div>
+        <div className=' container flex flex-col justify-center items-center  '>
+          <Image src={memojiImage} alt="Memoji at Computer" width={100} height={100}  
+          className='max-md:pt-20 pt-40 '
           />
+
             <div 
             className='flex items-center justify-center bg-black p-1 rounded-md px-4'>
               <div className=' justify-center rounded-full items-center inline-block h-3 w-3 bg-green-400 mr-4' ></div>
               Available for new Projects
             </div>
-            <div className=' text-5xl font-bold text-center mt-8 ' >
+            <div className=' text-3xl md:text-5xl font-bold text-center mt-8 ' >
               Building Exceptional
             </div>
-            <div className=' text-5xl font-bold text-center mt-1'>
+            <div className=' text-3xl md:text-5xl font-bold text-center mt-1'>
               User Experiences
             </div>
-            <div className=' text-center text-gray-400 mt-6 max-w-xl ' >
-              I specialize in transforming design concepts into clean, scalable, and high-quality code. With a strong focus on performance, responsiveness, and accessibility, I build seamless user experiences that work flawlessly across web and mobile platforms using modern development practices.
+            <div className='text-[] max-md:mx-4 text-center text-gray-400 mt-6 max-w-xl ' >
+              I specialize in transforming design concepts into clean, scalable, and high-quality code. With a strong focus on performance, responsiveness, and accessibility, 
             </div>
-            <div className=' mt-8 flex gap-4 text-[1.2rem] font-semibold ' >
+            <div className=' mt-8 flex gap-4 text-[1.2rem] max-md:text-[0.9rem] font-semibold ' >
               <button
               className='border-2 border-gray-500 px-4 py-2 rounded-lg flex justify-center items-center
                '  >
@@ -36,7 +44,7 @@ const Hero = () => {
 
                 </button>
               <button 
-              className='border-2 border-gray-500 px-4 py-1.5 rounded-lg bg-gray-100 text-black  '  >
+              className='border-2 hover:border-gray-500 px-4 py-1.5 rounded-lg bg-gray-100 text-black  '  >
                <span className='mr-1' >👋</span> Let's Connect</button>
             </div>
         </div>
