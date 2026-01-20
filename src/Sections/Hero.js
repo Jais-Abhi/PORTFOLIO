@@ -7,16 +7,16 @@ import { FaArrowDown } from "react-icons/fa";
 const Hero = () => {
   return (
     <div className=' relative w-full h-screen overflow-x-hidden flex justify-center items-center' >
-          <div className='absolute inset-0 -z-10 top-[10rem] ' >
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[37rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[52rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[67rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[82rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
-          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[95rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='absolute inset-0 -z-10  ' >
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 size-[20rem] md:size-[37rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10  size-[30rem] md:size-[52rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10  size-[40rem] md:size-[67rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10  size-[50rem] md:size-[82rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
+          <div className='border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10  size-[60rem] md:size-[95rem] absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full ' > </div>
           </div>
         <div className=' container flex flex-col justify-center items-center  '>
           <Image src={memojiImage} alt="Memoji at Computer" width={100} height={100}  
-          className='max-md:pt-20 pt-40 '
+          className='pt-20 '
           />
 
             <div 
