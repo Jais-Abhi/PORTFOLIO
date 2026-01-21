@@ -9,21 +9,41 @@ import Ring from '@/Components/Ring';
 const Hero = () => {
   return (
     <div className=' relative w-full h-screen overflow-x-hidden flex justify-center items-center' >
-      <div className=' absolute inset-0 -z-10 border-2 border-red-800 ' >
+      {/* <div 
+      className=' absolute rounded-full size-[20rem] md:size-[37rem] top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 boreder-red-600 rotate-0 ' >
+        <IoStarSharp className=" text-emerald-400/80 absolute top-1/2 left-1/2 translate-x-[9.5rem] md:translate-x-[18rem]"/>
+      </div>
+      <div 
+      className=' absolute rounded-full size-[30rem] md:size-[52rem] top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 boreder-red-600 rotate-300 ' >
+        <IoStarSharp className=" text-emerald-400/80 absolute top-1/2 left-1/2 translate-x-[14.5rem] md:translate-x-[18rem]"/>
+      </div>
+      <div 
+      className=' absolute rounded-full size-[40rem] md:size-[67rem] top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 boreder-red-600 rotate-0 ' >
+        <IoStarSharp className=" text-emerald-400/80 absolute top-1/2 left-1/2 translate-x-[9.5rem] md:translate-x-[18rem]"/>
+      </div>
+      <div 
+      className=' absolute rounded-full size-[50rem] md:size-[82rem] top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 boreder-red-600 rotate-0 ' >
+        <IoStarSharp className=" text-emerald-400/80 absolute top-1/2 left-1/2 translate-x-[9.5rem] md:translate-x-[18rem]"/>
+      </div>
+      <div 
+      className=' absolute rounded-full size-[60rem] md:size-[97rem] top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 boreder-red-600 rotate-0 ' >
+        <IoStarSharp className=" text-emerald-400/80 absolute top-1/2 left-1/2 translate-x-[9.5rem] md:translate-x-[18rem]"/>
+      </div> */}
+      {/* <div className=' absolute inset-0 -z-10 border-2 border-red-800 ' >
+        
         <IoStarSharp className="absolute top-1/2 left-1/2 translate-x-[10rem] md:translate-x-[18rem]"/>
-        <IoStarSharp className="absolute top-1/2 left-1/2 rotate-45 translate-x-[10rem] md:translate-x-[18rem]"/>
         <IoStarSharp className="absolute top-1/2 left-1/2 translate-x-[10rem] md:translate-x-[18rem]"/>
         <IoStarSharp className="absolute top-1/2 left-1/2 translate-x-[10rem] md:translate-x-[18rem]"/>
         <IoStarSharp className="absolute top-1/2 left-1/2 translate-x-[10rem] md:translate-x-[18rem]"/>
 
+      </div> */}
+      <div className='absolute inset-0 -z-10  ' >
+         <Ring size="20" mdSize="37" />
+         <Ring size="30" mdSize="52" />
+         <Ring size="40" mdSize="67" />
+         <Ring size="50" mdSize="82" />
+         <Ring size="60" mdSize="95" />
       </div>
-          <div className='absolute inset-0 -z-10  ' >
-         <Ring size="20rem" mdSize="37rem" />
-         <Ring size="30rem" mdSize="52rem" />
-         <Ring size="40rem" mdSize="67rem" />
-         <Ring size="50rem" mdSize="82rem" />
-         <Ring size="60rem" mdSize="95rem" />
-          </div>
         <div className=' container flex flex-col justify-center items-center  '>
           <Image src={memojiImage} alt="Memoji at Computer" width={100} height={100}  
           className='pt-20 '
