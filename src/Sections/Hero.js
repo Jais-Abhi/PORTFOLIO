@@ -12,14 +12,26 @@ const Hero = () => {
     <div className='' >
     <div className=' w-full relative overflow-hidden  flex justify-center items-center' >
 
-      <div className='absolute inset-0 md:-top-[30rem] -top-[20rem] -z-10  ' >
-         <Ring size="20" mdSize="37" />
+      <div className='absolute inset-0  md:-top-[25rem] -z-10  ' >
+        <div
+          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[20rem] md:size-[40rem] `} 
+          ></div>
+        <div
+          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[30rem] md:size-[60rem] `} 
+          ></div>
+        <div
+          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[40rem] md:size-[80rem] `} 
+          ></div>
+        <div
+          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[50rem] md:size-[100rem] max-md:hidden `} 
+          ></div>
+         {/* <Ring size="30" mdSize="60" />
          <Ring size="30" mdSize="52" />
          <Ring size="40" mdSize="67" />
          <Ring size="50" mdSize="82" />
-         <Ring size="60" mdSize="95" />
+         <Ring size="60" mdSize="95" /> */}
       </div>
-        <div className=' w-full md:h-[50rem] h-[50rem] flex flex-col md:mt-16 items-center  '>
+        <div className=' w-full md:h-[60rem] h-[45rem] flex flex-col md:mt-16   items-center  '>
           <Image src={memojiImage} alt="Memoji at Computer" width={100} height={100}  
           className='pt-20 '
           />
