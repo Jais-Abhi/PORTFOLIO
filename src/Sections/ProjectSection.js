@@ -1,14 +1,19 @@
 import React from 'react'
-
+import { projects } from '@/Components/projectData'
 const ProjectSection = () => {
   return (
-    <div className='h-[20rem] absolute ' >
-        <div>
-            <div  >Real World Results </div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <div >
+      <div>Featured Projects</div>
+      <div>See how i transform concepts into engaging digital experiences </div>
+      <div>
+        {projects.map((project)=>{
+          return (
+            <div key="project.id" >
+              
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
