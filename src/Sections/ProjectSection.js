@@ -7,13 +7,16 @@ const ProjectSection = () => {
       <div className='text-xl text-white/50 mt-4 text-center' >
       See how i transform concepts into engaging digital experiences 
       </div>
-      <div className='w-[80%] bg-red-500' >
+      <div className='w-[80%] flex flex-col gap-16 justify-center items-center ' >
         {projects.map((project)=>{
           return (
-            <div key={project.id} >
-              <div>
-                <div>
+            <div key={project.id} 
+            className=' w-full flex border-2 border-white/50 rounded-2xl h-[25rem] '
+            >
+              <div className='w-1/2  pt-8 pl-16 pr-16 ' >
+                <div className='text-center text-2xl' >
                   {project.title}
+                  <hr className=' text-center' />
                 </div>
                 <div>
                   {project.description.map((point,index)=>{
@@ -27,7 +30,7 @@ const ProjectSection = () => {
                   <button>Visit live site</button>
                 </div>
               </div>
-              <div>
+              <div className='w-1/2' >
                 <img src={project.image} alt={project.title} />
               </div>
             </div>
