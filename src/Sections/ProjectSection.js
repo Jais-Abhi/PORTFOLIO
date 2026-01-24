@@ -14,7 +14,7 @@ const ProjectSection = () => {
             className=' w-full flex border-2 border-white/50 rounded-2xl h-[25rem] '
             >
               <div className='w-1/2  pt-8 pl-16 pr-16 ' >
-                <div className='text-center text-2xl' >
+                <div className='text-center font-bold text-2xl' >
                   {project.title}
                   <hr className=' text-center' />
                 </div>
@@ -24,10 +24,10 @@ const ProjectSection = () => {
                       <div key={index} > {point} </div>
                     )
                   })}
-                </div>
-                <div>
-                  <button>Github</button>
-                  <button>Visit live site</button>
+                </div> 
+                <div className='flex gap-8 text-[1.3rem] font-semibold  text-black ' >
+                  <button className=' bg-white cursor-pointer rounded-lg px-8 py-2 ' >Github</button>
+                  <button className=' bg-white cursor-pointer rounded-lg px-8 py-2 ' > Visit live site</button>
                 </div>
               </div>
               <div className='w-1/2' >
