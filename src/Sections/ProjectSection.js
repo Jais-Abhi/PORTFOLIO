@@ -1,7 +1,9 @@
 import React from 'react'
 import { projects } from '@/Components/projectData'
-import { MdArrowOutward } from "react-icons/md";
+import { RiExternalLinkLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
+import { SiTicktick } from "react-icons/si";
+
 
 
 const ProjectSection = () => {
@@ -17,15 +19,18 @@ const ProjectSection = () => {
             <div key={project.id} 
             className=' w-full flex border-2 bg-white/10 border-white/50 rounded-2xl h-[25rem] '
             >
-              <div className='w-1/2  pt-8 pl-16 pr-16 ' >
+              <div className='w-[55%]  pt-8 pl-16 pr-12 ' >
                 <div className='text-center font-bold text-2xl' >
                   {project.title}
                   <hr className=' text-center mb-6 mt-6 text-white/40' />
                 </div>
-                <div className=' flex flex-col gap-6 mb-8 text-[1rem] ' >
+                <div className=' flex flex-col gap-6 mb-8 text-[1.05rem] text-white/80 ' >
                   {project.description.map((point,index)=>{
                     return (
-                      <div key={index} > {point} </div>
+                      <div key={index} 
+                      className='flex items-center'
+                      >
+                        <SiTicktick className='mr-4' /> {point} </div>
                     )
                   })}
                 </div> 
@@ -36,11 +41,11 @@ const ProjectSection = () => {
                   <button 
                   className=' bg-white cursor-pointer rounded-lg px-6 py-2 flex justify-center items-center  ' >
                      Visit live site 
-                     <MdArrowOutward className='font-black ml-2' /> 
+                     <RiExternalLinkLine className=' ml-2' /> 
                      </button>
                 </div>
               </div>
-              <div className='w-1/2 bg-red-400 ' >
+              <div className='w-[45%] bg-red-400 ' >
                 <img src={project.image} alt={project.title} />
               </div>
             </div>
