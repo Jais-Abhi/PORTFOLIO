@@ -1,5 +1,9 @@
 import React from 'react'
 import { projects } from '@/Components/projectData'
+import { MdArrowOutward } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+
+
 const ProjectSection = () => {
   return (
     <div className='flex flex-col items-center w-full' >
@@ -26,8 +30,14 @@ const ProjectSection = () => {
                   })}
                 </div> 
                 <div className='flex gap-8 text-[1.3rem] font-semibold  text-black mt-12 ' >
-                  <button className=' bg-white cursor-pointer rounded-lg px-8 py-2 ' >Github</button>
-                  <button className=' bg-white cursor-pointer rounded-lg px-8 py-2 ' > Visit live site</button>
+                  <button className=' bg-white cursor-pointer rounded-lg px-6 py-2 flex items-center ' >
+                    <FaGithub className='mr-2' />
+                     View Github </button>
+                  <button 
+                  className=' bg-white cursor-pointer rounded-lg px-6 py-2 flex justify-center items-center  ' >
+                     Visit live site 
+                     <MdArrowOutward className='font-black ml-2' /> 
+                     </button>
                 </div>
               </div>
               <div className='w-1/2 bg-red-400 ' >
