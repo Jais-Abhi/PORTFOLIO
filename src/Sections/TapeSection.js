@@ -1,8 +1,11 @@
 import React from 'react'
+import { BsStars } from "react-icons/bs";
 
 const TapeSection = () => {
   return (
-    <div>TapeSection</div>
+    <div>
+        <div></div>
+    </div>
   )
 }
 
