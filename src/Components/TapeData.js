@@ -1,13 +1,14 @@
 export const data = {
   items: [
-    "FAST",
+      "SECURE",
+      "RESPONSIVE",
+      "INTERACTIVE",
+      "SCALABLE",
+      "FAST",
     "ACCESSIBLE",
-    "SECURE",
-    "INTERACTIVE",
-    "SCALABLE",
-    "USER FRIENDLY",
-    "RESPONSIVE",
+    "USER-FRIENDLY",
     "MODERN",
     "RELIABLE",
+    "EFFICIENT",
   ],
 };
