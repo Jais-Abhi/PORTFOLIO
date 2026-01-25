@@ -3,6 +3,7 @@ import React from 'react'
 import "./globals.css"
 import Hero from '@/Sections/Hero'
 import ProjectSection from '@/Sections/ProjectSection'
+import TapeSection from '@/Sections/TapeSection'
 const page = () => {
   return (
     <div >
@@ -10,6 +11,7 @@ const page = () => {
       <Navbar/>
       <Hero/>
       <ProjectSection/>
+      <TapeSection/>
     </div>
   )
 }
