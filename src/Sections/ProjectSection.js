@@ -17,14 +17,14 @@ const ProjectSection = () => {
         {projects.map((project)=>{
           return (
             <div key={project.id} 
-            className=' w-full flex lg:flex-row flex-col border-2 bg-white/10 border-white/50 rounded-2xl h-[40rem] lg:h-[25rem] '
+            className=' w-full flex lg:flex-row flex-col border-2 bg-white/10 border-white/50 rounded-2xl h-[35rem] lg:h-[23rem] '
             >
-              <div className='lg:w-[55%] w-full lg:pl-8 lg:pr-12  pt-8 pl-4 pr-2 ' >
+              <div className='lg:w-[55%] w-full lg:pl-8 lg:pr-12  pt-4 pl-4 pr-2 ' >
                 <div className='text-center font-bold text-2xl' >
                   {project.title}
-                  <hr className=' text-center mb-4 mt-6 lg:mt-8 text-white/40' />
+                  <hr className=' text-center mb-4 mt-4 lg:mt-8 text-white/40' />
                 </div>
-                <div className=' flex flex-col gap-4 lg:gap-6 mb-8 text-[1rem] text-white/80 ' >
+                <div className=' flex flex-col gap-4 lg:gap-6 mb-4 text-[1rem] text-white/80 ' >
                   {project.description.map((point,index)=>{
                     return (
                       <div key={index} 
@@ -34,18 +34,18 @@ const ProjectSection = () => {
                     )
                   })}
                 </div> 
-                <div className='flex lg:gap-8 gap-4 text-[1rem] lg:text-[1.3rem] font-semibold  text-black mt-12 ' >
+                <div className='flex lg:gap-8 gap-4 text-[1rem] lg:text-[1.3rem] font-semibold  text-black lg:mt-12 ' >
                   <button className=' bg-white max-lg:w-[45%] cursor-pointer rounded-lg lg:px-6 py-2 flex items-center justify-center ' >
-                    <FaGithub className='mr-2' />
+                    <FaGithub className='mr-2 max-lg:text-xl' />
                      View Github </button>
                   <button 
                   className=' bg-white max-lg:w-[50%] cursor-pointer rounded-lg lg:px-6 py-2 flex justify-center items-center  ' >
                      Visit live site 
-                     <RiExternalLinkLine className=' ml-2' /> 
+                     <RiExternalLinkLine className=' ml-2 max-lg:text-xl' /> 
                      </button>
                 </div>
               </div>
-              <div className='w-[45%] bg-red-400 ' >
+              <div className='lg:w-[45%] h-[90%] m-2  bg-red-400 ' >
                 <img src={project.image} alt={project.title} />
               </div>
             </div>
