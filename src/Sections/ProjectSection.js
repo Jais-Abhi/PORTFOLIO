@@ -13,13 +13,13 @@ const ProjectSection = () => {
       <div className='text-xl text-white/50 mt-4 text-center mb-8' >
       See how i transform concepts into engaging digital experiences 
       </div>
-      <div className='w-[80%] flex flex-col gap-16 justify-center items-center ' >
+      <div className=' w-[90%] lg:w-[80%] flex flex-col gap-16 justify-center items-center ' >
         {projects.map((project)=>{
           return (
             <div key={project.id} 
-            className=' w-full flex border-2 bg-white/10 border-white/50 rounded-2xl h-[25rem] '
+            className=' w-full flex lg:flex-row flex-col border-2 bg-white/10 border-white/50 rounded-2xl h-[25rem] '
             >
-              <div className='w-[55%]  pt-8 pl-16 pr-12 ' >
+              <div className='lg:w-[55%] w-full  pt-8 pl-8 pr-6 ' >
                 <div className='text-center font-bold text-2xl' >
                   {project.title}
                   <hr className=' text-center mb-6 mt-6 text-white/40' />
