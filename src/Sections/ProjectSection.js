@@ -13,33 +13,33 @@ const ProjectSection = () => {
       <div className='text-xl text-white/50 mt-4 text-center mb-8' >
       See how i transform concepts into engaging digital experiences 
       </div>
-      <div className=' w-[90%] lg:w-[80%] flex flex-col gap-16 justify-center items-center ' >
+      <div className=' w-[95%] md:w-[90%] lg:w-[80%] flex flex-col gap-16 justify-center items-center ' >
         {projects.map((project)=>{
           return (
             <div key={project.id} 
-            className=' w-full flex lg:flex-row flex-col border-2 bg-white/10 border-white/50 rounded-2xl h-[25rem] '
+            className=' w-full flex lg:flex-row flex-col border-2 bg-white/10 border-white/50 rounded-2xl h-[40rem] lg:h-[25rem] '
             >
-              <div className='lg:w-[55%] w-full  pt-8 pl-8 pr-6 ' >
+              <div className='lg:w-[55%] w-full lg:pl-8 lg:pr-12  pt-8 pl-4 pr-2 ' >
                 <div className='text-center font-bold text-2xl' >
                   {project.title}
-                  <hr className=' text-center mb-6 mt-6 text-white/40' />
+                  <hr className=' text-center mb-4 mt-6 lg:mt-8 text-white/40' />
                 </div>
-                <div className=' flex flex-col gap-6 mb-8 text-[1.05rem] text-white/80 ' >
+                <div className=' flex flex-col gap-4 lg:gap-6 mb-8 text-[1rem] text-white/80 ' >
                   {project.description.map((point,index)=>{
                     return (
                       <div key={index} 
                       className='flex items-center'
                       >
-                        <SiTicktick className='mr-4' /> {point} </div>
+                        <SiTicktick className='mr-4 max-md:text-2xl' /> {point} </div>
                     )
                   })}
                 </div> 
-                <div className='flex gap-8 text-[1.3rem] font-semibold  text-black mt-12 ' >
-                  <button className=' bg-white cursor-pointer rounded-lg px-6 py-2 flex items-center ' >
+                <div className='flex lg:gap-8 gap-4 text-[1rem] lg:text-[1.3rem] font-semibold  text-black mt-12 ' >
+                  <button className=' bg-white max-lg:w-[45%] cursor-pointer rounded-lg lg:px-6 py-2 flex items-center justify-center ' >
                     <FaGithub className='mr-2' />
                      View Github </button>
                   <button 
-                  className=' bg-white cursor-pointer rounded-lg px-6 py-2 flex justify-center items-center  ' >
+                  className=' bg-white max-lg:w-[50%] cursor-pointer rounded-lg lg:px-6 py-2 flex justify-center items-center  ' >
                      Visit live site 
                      <RiExternalLinkLine className=' ml-2' /> 
                      </button>
