@@ -3,7 +3,7 @@ import { BsStars } from "react-icons/bs";
 import { data } from '@/Components/TapeData';
 const TapeSection = () => {
   return (
-    <div className='mt-16 mb-16' >
+    <div className='mt-24 mb-16' >
         <div className='-rotate-2 w-[99.99%]' >
         <div className='flex whitespace-nowrap bg-linear-to-r from-green-400 to-blue-400 lg:p-4 p-2 lg:gap-6 gap-2 overflow-hidden items-center ' >
             {
