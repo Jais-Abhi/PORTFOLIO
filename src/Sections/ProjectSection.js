@@ -45,7 +45,7 @@ const ProjectSection = () => {
                      </button>
                 </div>
               </div>
-              <div className='lg:w-[45%] h-[100%] lg:rounded-2xl m-4 lg:m0   bg-red-400 overflow-hidden ' >
+              <div className='lg:w-[45%] h-[100%] lg:rounded-2xl m-4 lg:m-0   bg-red-400 overflow-hidden ' >
                 <div  className='lg:relative -right-30 top-10 h-full '>
                   <div className='bg-green-600 h-full w-full ' >
                     ff
