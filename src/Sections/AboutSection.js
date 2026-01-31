@@ -1,5 +1,5 @@
 import Card from '@/Components/Card'
-import TechIcon from '@/Components/TechIcon'
+import TechBox from '@/Components/TechBox'
 import React from 'react'
 import { TechList } from '@/Components/Techlist'
 const AboutSection = () => {
@@ -11,10 +11,10 @@ const AboutSection = () => {
           <Card heading="My Toolbox" desc="Explore the technologies and tools I utilize to craft exceptional digital experiences."
           classname="w-2/3"
           >
-            <div className='flex flex-wrap gap-12' >
+            <div className='flex flex-wrap gap-6 mt-6' >
               {TechList.map((tech,index)=>{
                 return(
-                  <TechIcon key={index} tech={tech.name} icon={tech.icon} />
+                  <TechBox key={index} tech={tech.name} icon={tech.icon} />
                 )
               })}
             </div>
