@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TechBox = ({tech, icon}) => {
+const TechButton = ({tech, icon}) => {
   return (
     <div className='px-4 py-2 cursor-pointer  border-3 border-blue-500/50 rounded-2xl flex items-center justify-center' >
       <div className='text-4xl' >
@@ -11,4 +11,4 @@ const TechBox = ({tech, icon}) => {
   )
 }
 
-export default TechBox
+export default TechButton
