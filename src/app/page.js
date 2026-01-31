@@ -4,6 +4,7 @@ import "./globals.css"
 import Hero from '@/Sections/Hero'
 import ProjectSection from '@/Sections/ProjectSection'
 import TapeSection from '@/Sections/TapeSection'
+import AboutSection from '@/Sections/AboutSection'
 const page = () => {
   return (
     <div >
@@ -12,6 +13,7 @@ const page = () => {
       <Hero/>
       <ProjectSection/>
       <TapeSection/>
+      <AboutSection/>
     </div>
   )
 }
