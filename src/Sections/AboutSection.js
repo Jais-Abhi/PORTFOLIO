@@ -14,7 +14,7 @@ const AboutSection = () => {
   const hobbieContainerRef = useRef(null)
   return (
     <>
-    <div id='about'>
+    <div id='about' className=' scroll-mt-12' >
 
     
     <Heading head="ABOUT ME" desc="A Glimpse into my world "  />

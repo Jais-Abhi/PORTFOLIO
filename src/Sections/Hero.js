@@ -10,7 +10,7 @@ import { LiaStarSolid } from "react-icons/lia";
 const Hero = () => {
   return (
     <>
-    <div id='hero' className='' >
+    <div id='home' className='' >
     <div className=' w-full relative overflow-hidden  flex justify-center items-center' >
 
       <div className='absolute inset-0  md:-top-[25rem] -z-10  ' >
