@@ -2,8 +2,9 @@ import React from 'react'
 import memojiImage from  "@/assets/images/memoji-computer.png"
 import Image from 'next/image'
 import { FaArrowDown } from "react-icons/fa";
-import { IoStarSharp } from "react-icons/io5";
 import Ring from '@/Components/Ring';
+import { LiaStarSolid } from "react-icons/lia";
+
 
 
 const Hero = () => {
@@ -14,17 +15,74 @@ const Hero = () => {
 
       <div className='absolute inset-0  md:-top-[25rem] -z-10  ' >
         <div
-          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[20rem] md:size-[40rem] `} 
-          ></div>
+          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[20rem] md:size-[40rem] animate-spin-md `} 
+          >
+            
+            <LiaStarSolid 
+            className='text-emerald-400/20 text-xl absolute top-120 left-1/2 translate-x-[20rem] '
+            />
+            <LiaStarSolid 
+            className='text-emerald-400/80 text-2xl absolute top-30 left-60 translate-x-[20rem] '
+            />
+            <LiaStarSolid 
+            className='text-emerald-400/80 text-3xl absolute top-0 left-0 translate-x-[20rem] '
+            />
+            <LiaStarSolid 
+            className='text-emerald-400/80 text-2xl absolute bottom-0 -left-40 translate-x-[20rem] '
+            />
+
+            
+
+          </div>
         <div
-          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[30rem] md:size-[60rem] `} 
-          ></div>
+          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[30rem] md:size-[60rem] animate-spin-slow `} 
+          >
+            <LiaStarSolid 
+            className='text-emerald-400/50 text-4xl absolute bottom-100 -left-100 translate-x-[30rem] '
+            />
+            <LiaStarSolid 
+            className='text-emerald-400/30 text-2xl absolute top-30 -left-80 translate-x-[30rem] '
+            />
+            
+            <LiaStarSolid 
+            className='text-emerald-400/80 text-2xl absolute top-50 right-120 translate-x-[30rem] '
+            />
+
+            
+          </div>
         <div
-          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[40rem] md:size-[80rem] `} 
-          ></div>
+          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[40rem] md:size-[80rem] animate-spin-slow `} 
+          >
+            <LiaStarSolid 
+            className='text-emerald-400/50 text-4xl absolute bottom-200 -left-150 translate-x-[40rem] '
+            />
+            <LiaStarSolid 
+            className='text-emerald-400/30 text-2xl absolute top-10 right-10 translate-y-[40rem] '
+            />
+            
+            <LiaStarSolid 
+            className='text-emerald-400/80 text-2xl absolute bottom-80 -left-120 translate-x-[40rem] '
+            />
+
+          </div>
         <div
-          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[50rem] md:size-[100rem] max-md:hidden `} 
-          ></div>
+          className={`border border-emerald-500/20 shadow-[0_0_80px_inset] shadow-emerald-300/10 absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-start items-start size-[50rem] md:size-[100rem] max-md:hidden animate-spin-slow `} 
+          >
+            <LiaStarSolid 
+            className='text-emerald-400/50 text-4xl absolute bottom-50 left-100 translate-x-[50rem] '
+            />
+            <LiaStarSolid 
+            className='text-emerald-400/80 text-5xl absolute top-320 left-50 translate-x-[50rem] '
+            />
+            <LiaStarSolid 
+            className='text-emerald-400/30 text-2xl absolute -top-50 right-10 translate-y-[50rem] '
+            />
+            
+            <LiaStarSolid 
+            className='text-emerald-400/80 text-2xl absolute bottom-150 -left-180 translate-x-[50rem] '
+            />
+
+          </div>
          {/* <Ring size="30" mdSize="60" />
          <Ring size="30" mdSize="52" />
          <Ring size="40" mdSize="67" />
