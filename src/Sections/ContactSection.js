@@ -1,8 +1,9 @@
 import React from 'react'
+import { MdArrowOutward } from "react-icons/md";
 
 const ContactSection = () => {
   return (
-    <div>ContactSection</div>
+    <div></div>
   )
 }
 
