@@ -1,10 +1,13 @@
 import React from 'react'
 import { BsStars } from "react-icons/bs";
 
-const Card = ({heading,desc,children}) => {
+const Card = ({heading,desc,h,children}) => {
   return (
     <div
-        className=' w-full flex flex-col border-2 bg-white/10 border-white/50 rounded-2xl'
+    style={{
+      height: h
+    }}
+        className=' overflow-hidden w-full flex flex-col border-2 bg-white/10 border-white/50 rounded-2xl'
         >
           <div className=' w-full lg:pl-8 lg:pr-12  pt-4 pl-4 pr-2 ' >
             <div className=' flex items-center gap-4 font-bold text-2xl' >

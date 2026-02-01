@@ -30,8 +30,8 @@ const AboutSection = () => {
 
         <div className='flex max-md:flex-col w-full gap-12 ' >
           <div className='md:w-2/3 w-full' >
-            <Card heading="Beyond the code" desc="Exploring my passions and interests outside of programming."
-            classname="w-2/3"
+            <Card heading="Beyond the code" desc="Exploring my passions and interests outside of programming. " h="17rem"
+            classname="w-2/3 "
             >
               <div className='flex gap-4 flex-wrap pb-8' >
                 {HobbieList.map((hobbie,index)=>{
@@ -43,8 +43,8 @@ const AboutSection = () => {
             </Card>
           </div>
 
-          <div className=' w-full md:w-1/3' >
-            <Card heading="Location" desc="Let's collaborate "
+          <div className=' w-full md:w-1/3 overflow-hidden' >
+            <Card heading="Location" desc="Let's collaborate" h="17rem"
             classname="w-2/3"
             >
               <Image src={gMap} alt="Profile of the user" width={400} height={200} />

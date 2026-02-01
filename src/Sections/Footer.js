@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         <div className='flex sm:gap-4 max-sm:flex-col justify-center' >
             <div>
-                <a target='blank' href="https://www.linkedin.com/in/abhishek-jais/"
+                <a target='blank' href="https://www.instagram.com/abhijais28_/"
                 className='flex items-center gap-1 p-2'
                 >
                 <Icon icon="skill-icons:instagram" className='text-xl' />
@@ -50,7 +50,7 @@ const Footer = () => {
                 </a>
             </div>
             <div>
-                <a target='blank' href="https://www.linkedin.com/in/abhishek-jais/"
+                <a target='blank' href="#"
                 className='flex items-center gap-1 p-2'
                 >
                 <Icon icon="codicon:twitter" className='text-xl' />
