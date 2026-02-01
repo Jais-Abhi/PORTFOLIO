@@ -19,4 +19,24 @@ export const HobbieList =[
         name : "Fittness",
         icon : "⛹️",
     },
+    {
+        name : "Traveling",
+        icon : "✈️",
+    },
+    {
+        name : "Reading",
+        icon : "📚",
+    },
+    {
+        name : "Cooking",
+        icon : "👨‍🍳",
+    },
+    {
+        name : "Hiking",
+        icon : "🥾",
+    },
+    {
+        name : "Writing",
+        icon : "✍️",
+    },
 ]

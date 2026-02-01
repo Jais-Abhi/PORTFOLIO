@@ -7,9 +7,9 @@ const HobbieButton = ({hobbie,icon,constraintsRef}) => {
     <motion.div
     drag
     dragConstraints={constraintsRef}
-     className=' text-black cursor-po font-bold bg-linear-to-r from-blue-400 to-emerald-400 flex px-6 py-2 rounded-full ' >
+     className='  text-black cursor-pointer  font-bold bg-linear-to-r from-blue-400 to-emerald-400 flex px-3 md:px-6 py-2 h-10 rounded-full ' >
         <div className='flex gap-2' >
-            <div>
+            <div  >
                 {hobbie}
             </div>
             {icon}

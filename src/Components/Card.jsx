@@ -7,7 +7,7 @@ const Card = ({heading,desc,h,children}) => {
     style={{
       height: h
     }}
-        className=' overflow-hidden w-full flex flex-col border-2 bg-white/10 border-white/50 rounded-2xl'
+        className=' overflow-visible w-full flex flex-col border-2 bg-white/10 border-white/50 rounded-2xl pb-8 '
         >
           <div className=' w-full lg:pl-8 lg:pr-12  pt-4 pl-4 pr-2 ' >
             <div className=' flex items-center gap-4 font-bold text-2xl' >

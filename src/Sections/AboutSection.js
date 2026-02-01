@@ -34,14 +34,18 @@ const AboutSection = () => {
         </div>
 
         <div className='flex max-md:flex-col w-full gap-12 ' >
-          <div className='md:w-2/3 w-full' >
-            <Card heading="Beyond the code" desc="Exploring my passions and interests outside of programming. " h="17rem"
+          <div className='md:w-2/3 w-full ' >
+            <Card heading="Beyond the code"
+             desc="Exploring my passions and interests outside of programming."
+             
             classname="w-2/3 "
             >
-              <div ref={hobbieContainerRef} className='flex gap-4 flex-wrap pb-8' >
+              <div ref={hobbieContainerRef} 
+              className='  flex gap-4 flex-wrap pb-12 ' >
                 {HobbieList.map((hobbie,index)=>{
                 return(
-                  <HobbieButton key={index} hobbie={hobbie.name} icon={hobbie.icon} constraintsRef={hobbieContainerRef} />
+                  <HobbieButton key={index} hobbie={hobbie.name} 
+                  icon={hobbie.icon} constraintsRef={hobbieContainerRef} />
                 )
               })}
               </div>
