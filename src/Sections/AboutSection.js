@@ -1,16 +1,21 @@
+"use client"
+
 import Card from '@/Components/Card'
 import TechButton from '@/Components/TechButton'
-import React from 'react'
+import React, { useRef } from 'react'
 import { TechList } from '@/Components/Techlist'
 import HobbieButton from '@/Components/HobbieButton'
 import { HobbieList } from '@/Components/HobbiesData'
 import Heading from '@/Components/Heading'
 import Image from 'next/image'
 import gMap from '@/assets/images/g_map.jpg'
-
+import { motion } from 'framer-motion'
 const AboutSection = () => {
+  const hobbieContainerRef = useRef(null)
   return (
     <>
+    <div id='about'>
+
     
     <Heading head="ABOUT ME" desc="A Glimpse into my world "  />
     <div className=' flex-col gap-12 h-auto mx-4 lg:mx-40 ' >
@@ -33,10 +38,10 @@ const AboutSection = () => {
             <Card heading="Beyond the code" desc="Exploring my passions and interests outside of programming. " h="17rem"
             classname="w-2/3 "
             >
-              <div className='flex gap-4 flex-wrap pb-8' >
+              <div ref={hobbieContainerRef} className='flex gap-4 flex-wrap pb-8' >
                 {HobbieList.map((hobbie,index)=>{
                 return(
-                  <HobbieButton key={index} hobbie={hobbie.name} icon={hobbie.icon} />
+                  <HobbieButton key={index} hobbie={hobbie.name} icon={hobbie.icon} constraintsRef={hobbieContainerRef} />
                 )
               })}
               </div>
@@ -52,8 +57,7 @@ const AboutSection = () => {
           </div>
 
         </div>
-
-        
+      </div>
       </div>
     </>
   )

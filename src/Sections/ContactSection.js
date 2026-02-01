@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const ContactSection = () => {
   return (
-    <div className=' p-4 lg:p-8 max-lg:flex-col  rounded-4xl mt-20 flex lg:items-center w-full lg:w-4/5 lg:mx-auto bg-linear-to-r from-emerald-400 to-blue-400' >
+    <div id='contact' className=' p-4 lg:p-8 max-lg:flex-col  rounded-4xl mt-20 flex lg:items-center w-full lg:w-4/5 lg:mx-auto bg-linear-to-r from-emerald-400 to-blue-400' >
         <div className="w-full lg:w-3/4">
             <div className='text-black font-bold text-2xl md:text-3xl mb-4 ' >
                 Let's Create something amazing together! 

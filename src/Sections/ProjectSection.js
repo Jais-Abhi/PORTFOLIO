@@ -9,7 +9,7 @@ import Heading from '@/Components/Heading';
 
 const ProjectSection = () => {
   return (
-    <div className='flex flex-col items-center w-full' >
+    <div id='projects' className='flex flex-col items-center w-full' >
       <Heading head="Featured Projects" desc="See how i transform concepts into engaging digital experiences"/>
       <div className=' w-[95%] md:w-[90%] lg:w-[80%] flex flex-col gap-16 justify-center items-center ' >
         {projects.map((project,index)=>{
