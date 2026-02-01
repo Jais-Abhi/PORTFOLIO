@@ -3,16 +3,14 @@ import { projects } from '@/Components/projectData'
 import { RiExternalLinkLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { SiTicktick } from "react-icons/si";
+import Heading from '@/Components/Heading';
 
 
 
 const ProjectSection = () => {
   return (
     <div className='flex flex-col items-center w-full' >
-      <div className='text-4xl font-bold text-center' >Featured Projects</div>
-      <div className='text-xl text-white/50 mt-4 text-center mb-8' >
-      See how i transform concepts into engaging digital experiences 
-      </div>
+      <Heading head="Featured Projects" desc="See how i transform concepts into engaging digital experiences"/>
       <div className=' w-[95%] md:w-[90%] lg:w-[80%] flex flex-col gap-16 justify-center items-center ' >
         {projects.map((project)=>{
           return (

@@ -38,7 +38,9 @@ const Hero = () => {
 
             <div 
             className='flex items-center justify-center bg-black p-1 rounded-md px-4'>
-              <div className=' justify-center rounded-full items-center inline-block h-3 w-3 bg-green-400 mr-4' ></div>
+              <div className=' justify-center rounded-full items-center inline-block h-3 w-3 bg-green-400 mr-4 relative ' > 
+                <div className=' justify-center rounded-full items-center inline-block h-3 w-3 bg-green-400 mr-4 animate-ping-large absolute inset-0 ' ></div>
+              </div>
               Available for new Projects
             </div>
             <div className=' text-3xl md:text-5xl font-bold text-center mt-8 ' >

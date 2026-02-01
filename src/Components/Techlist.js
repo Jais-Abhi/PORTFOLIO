@@ -10,6 +10,12 @@ import { SiFirebase } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiClerk } from "react-icons/si";
 import { SiRazorpay } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { SiPython } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { SiSocketdotio } from "react-icons/si";
+import { Icon } from "@iconify/react";
 
 
 export const TechList = [
@@ -42,7 +48,11 @@ export const TechList = [
         name : "EXPRESS",
     },
     {
-        icon : <SiFirebase className="text-yellow-500" />,
+        icon : <FaGithub className="text-gray-100" />,
+        name : "GITHUB",
+    },
+    {
+        icon : <Icon icon="logos:firebase-icon" />,
         name : "FIREBASE",
     },
     {
@@ -58,7 +68,23 @@ export const TechList = [
         name : "RAZORPAY",
     },
     {
-        icon : <FaGithub className="text-gray-100" />,
-        name : "GITHUB",
+        icon : <Icon icon="devicon:nextjs"/>,
+        name : "NEXT JS",
+    },
+    {
+        icon : <Icon icon="devicon:java" />,
+        name : "JAVA",
+    },
+    {
+        icon : <Icon icon="devicon:python" />,
+        name : "PYTHON",
+    },
+    {
+        icon : <SiPostman className="text-orange-500" />,
+        name : "POSTMAN",
+    },
+    {
+        icon : <SiSocketdotio className="text-white" />,
+        name : "SOCKET.IO",
     },
 ]
