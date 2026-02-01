@@ -6,6 +6,7 @@ import ProjectSection from '@/Sections/ProjectSection'
 import TapeSection from '@/Sections/TapeSection'
 import AboutSection from '@/Sections/AboutSection'
 import ContactSection from '@/Sections/ContactSection'
+import Footer from '@/Sections/Footer'
 const page = () => {
   return (
     <div >
@@ -16,6 +17,7 @@ const page = () => {
       <TapeSection/>
       <AboutSection/>
       <ContactSection/>
+      <Footer/>
     </div>
   )
 }
