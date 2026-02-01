@@ -12,10 +12,13 @@ const ProjectSection = () => {
     <div className='flex flex-col items-center w-full' >
       <Heading head="Featured Projects" desc="See how i transform concepts into engaging digital experiences"/>
       <div className=' w-[95%] md:w-[90%] lg:w-[80%] flex flex-col gap-16 justify-center items-center ' >
-        {projects.map((project)=>{
+        {projects.map((project,index)=>{
           return (
-            <div key={project.id} 
-            className=' w-full flex lg:flex-row flex-col border-2 bg-white/10 border-white/50 rounded-2xl h-[35rem] lg:h-[23rem] '
+            <div key={index} 
+            style={{
+              top : `${60+(index)*60}px`
+            }}
+            className=' sticky  w-full flex lg:flex-row flex-col border-2 bg-gray-800 border-white/50 rounded-2xl h-[35rem] lg:h-[23rem] '
             >
               <div className='lg:w-[55%] w-full lg:pl-8 lg:pr-12  pt-4 pl-4 pr-2 ' >
                 <div className='text-center font-bold text-2xl' >
