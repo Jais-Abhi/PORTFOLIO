@@ -32,12 +32,12 @@ export const TechList = [
         name : "JAVASCRIPT",
     },
     {
-        icon : <RiTailwindCssFill className="text-cyan-400 " />,
-        name : "TAILWIND CSS",
-    },
-    {
         icon : <FaReact className="text-blue-400" />,
         name : "REACT JS",
+    },
+    {
+        icon : <RiTailwindCssFill className="text-cyan-400 " />,
+        name : "TAILWIND CSS",
     },
     {
         icon : <FaNodeJs className="text-green-500 " />,
