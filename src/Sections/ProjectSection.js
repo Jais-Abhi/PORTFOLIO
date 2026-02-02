@@ -4,6 +4,8 @@ import { RiExternalLinkLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { SiTicktick } from "react-icons/si";
 import Heading from '@/Components/Heading';
+import Image from 'next/image';
+import Link from 'next/link';
 
 
 
@@ -36,22 +38,25 @@ const ProjectSection = () => {
                   })}
                 </div> 
                 <div className='flex lg:gap-8 gap-4 text-[1rem] lg:text-[1.3rem] font-semibold  text-black lg:mt-12 ' >
-                  <button className=' bg-white max-lg:w-[45%] cursor-pointer rounded-lg lg:px-6 py-2 flex items-center justify-center ' >
+                  <Link 
+                  target='_blank'
+                  href={project.github} className=' bg-white max-lg:w-[45%] cursor-pointer rounded-lg lg:px-6 py-2 flex items-center justify-center ' >
                     <FaGithub className='mr-2 max-lg:text-xl' />
-                     View Github </button>
-                  <button 
+                     View Github </Link>
+                  <Link 
+                  target='_blank'
+                  href={project.live} 
                   className=' bg-white max-lg:w-[50%] cursor-pointer rounded-lg lg:px-6 py-2 flex justify-center items-center  ' >
                      Visit live site 
                      <RiExternalLinkLine className=' ml-2 max-lg:text-xl' /> 
-                     </button>
+                     </Link>
                 </div>
               </div>
-              <div className='lg:w-[45%] h-[100%] lg:rounded-2xl m-4 lg:m-0   bg-red-400 overflow-hidden ' >
-                <div  className='lg:relative -right-30 top-10 h-full '>
-                  <div className='bg-green-600 h-full w-full ' >
-                    ff
-                  </div>
-                {/* <img src={project.image} alt={project.title} /> */}
+              <div className='lg:w-[45%] h-[100%] pl-8 lg:rounded-2xl m-4 lg:m-0 overflow-hidden ' >
+                <div  className='lg:relative h-full '>
+                  {/* <div className='bg-green-600 h-full w-full ' >
+                  </div> */}
+                  <Image src={project.image} alt={project.title} width={1000} height={1000} className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

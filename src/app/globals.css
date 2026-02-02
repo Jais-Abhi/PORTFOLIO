@@ -43,7 +43,7 @@ html {
 
 
 @theme {
-  --animate-trans-x-fast: trans-x-fast 5s linear infinite;
+  --animate-trans-x-fast: trans-x-fast 8s linear infinite;
   @keyframes trans-x-fast {
     
     to {
