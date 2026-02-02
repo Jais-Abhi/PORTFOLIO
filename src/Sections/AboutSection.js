@@ -34,7 +34,10 @@ const AboutSection = () => {
         </div>
 
         <div className='flex max-md:flex-col w-full gap-12 ' >
-          <div className='md:w-2/3 w-full ' >
+
+          {/* Add """""md:w-2/3""""" here bottom div after adding a map */}
+
+          <div className=' w-full ' >  
             <Card heading="Beyond the code"
              desc="Exploring my passions and interests outside of programming."
              
@@ -52,13 +55,13 @@ const AboutSection = () => {
             </Card>
           </div>
 
-          <div className=' w-full md:w-1/3 overflow-hidden' >
+          {/* <div className=' w-full md:w-1/3 overflow-hidden' >
             <Card heading="Location" desc="Let's collaborate" h="17rem"
             classname="w-2/3"
             >
               <Image src={gMap} alt="Profile of the user" width={400} height={200} />
             </Card>
-          </div>
+          </div> */}
 
         </div>
       </div>

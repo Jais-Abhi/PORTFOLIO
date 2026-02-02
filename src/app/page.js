@@ -7,6 +7,7 @@ import TapeSection from '@/Sections/TapeSection'
 import AboutSection from '@/Sections/AboutSection'
 import ContactSection from '@/Sections/ContactSection'
 import Footer from '@/Sections/Footer'
+import Contact from '@/Components/Contact'
 const page = () => {
   return (
     <div >
@@ -17,6 +18,7 @@ const page = () => {
       <TapeSection/>
       <AboutSection/>
       <ContactSection/>
+      {/* <Contact/> */}
       <Footer/>
     </div>
   )

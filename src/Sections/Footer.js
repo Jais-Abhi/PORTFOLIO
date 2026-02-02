@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react'
+import Link from 'next/link';
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
 
@@ -20,43 +21,52 @@ const Footer = () => {
         <div className='flex sm:gap-4 max-sm:flex-col justify-center' >
     
             <div>
-                <a target='blank' href="https://github.com/Jais-Abhi"
+                <Link target='blank' href="https://github.com/Jais-Abhi"
                 className='flex items-center gap-1 p-2'
                 >
                 <Icon icon="mdi:github" className='text-xl' />
                 Github
                 <MdArrowOutward/>
-                </a>
+                </Link>
             </div>
             <div>
-                <a target='blank' href="https://www.linkedin.com/in/abhishek-jais/"
+                <Link target='blank' href="https://www.linkedin.com/in/abhishek-jais/"
                 className='flex items-center gap-1 p-2'
                 >
                 <Icon icon="skill-icons:linkedin" className='text-xl' />
                 LinkedIn
                 <MdArrowOutward/>
-                </a>
+                </Link>
             </div>
             
         </div>
         <div className='flex sm:gap-4 max-sm:flex-col justify-center' >
             <div>
-                <a target='blank' href="https://www.instagram.com/abhijais28_/"
+                <Link target='blank' href="https://www.instagram.com/abhijais28_/"
                 className='flex items-center gap-1 p-2'
                 >
                 <Icon icon="skill-icons:instagram" className='text-xl' />
                 Instagram
                 <MdArrowOutward/>
-                </a>
+                </Link>
+            </div>
+            <div className='max-md:hidden flex' >
+                <Link target='blank' href='mailto:abhijaiswal7479@gmail.com'
+                className='flex items-center gap-1 p-2'
+                >
+                <Icon icon="logos:google-gmail" />
+                Gmail
+                <MdArrowOutward/>
+                </Link>
             </div>
             <div>
-                <a target='blank' href="#"
+                <Link target='blank' href="#"
                 className='flex items-center gap-1 p-2'
                 >
                 <Icon icon="codicon:twitter" className='text-xl' />
                 Twitter
                 <MdArrowOutward/>
-                </a>
+                </Link>
             </div>
         </div>
         </div>

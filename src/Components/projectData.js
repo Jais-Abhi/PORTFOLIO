@@ -28,16 +28,5 @@ export const projects = [
     image: Portfolio
   },
 
-  {
-    id: 3,
-    title: "Task Manager App",
-    description: [
-      "A task management app to create, update, and delete daily tasks.",
-      "Features user authentication and protected routes.",
-      "Created using MERN stack with JWT-based authentication."
-    ],
-    github: "https://github.com/yourusername/task-manager",
-    live: "https://task-manager.vercel.app",
-    image: "/projects/task-manager.png"
-  }
+  
 ];

@@ -1,4 +1,5 @@
 // import { Geist, Geist_Mono } from "next/font/google";
+import DisableInspect from "@/Components/DisableInspect";
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -23,8 +24,11 @@ export default function RootLayout({ children }) {
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className="bg-gray-900 text-white"
       >
+        {/* <DisableInspect/> */}
         {children}
+        
       </body>
+      
     </html>
   );
 }

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
 
@@ -13,7 +14,9 @@ const ContactSection = () => {
             </div>
         </div>
         <div className='flex justify-center  items-center w-full max-lg:pt-4 max-lg:pb-4 lg:w-1/4 text-xl font-semibold md:font-bold' >
-            <button className='bg-black py-2 px-4 flex items-center justify-center gap-2 rounded-xl ' >Contact Me <MdArrowOutward/> </button>
+            <Link 
+            href='mailto:abhijaiswal7479@gmail.com'
+             className='bg-black py-2 px-4 flex items-center justify-center gap-2 rounded-xl ' >Contact Me <MdArrowOutward/> </Link>
         </div>
     </div>
   )
