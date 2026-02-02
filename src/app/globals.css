@@ -24,7 +24,7 @@ html {
 }
 @theme {
   /* --animate-ping-large: ping-large 1s ease-in-out infinite; */
-  --animate-spin-slow: spin-slow 6s linear infinite;
+  --animate-spin-slow: spin-slow 4s linear infinite;
   @keyframes spin-slow {
     to {
     transform: rotate(360deg);
@@ -33,7 +33,7 @@ html {
 }
 @theme {
   /* --animate-ping-large: ping-large 1s ease-in-out infinite; */
-  --animate-spin-md: spin-md 4s linear infinite;
+  --animate-spin-md: spin-md 3s linear infinite;
   @keyframes spin-md {
     to {
     transform: rotate(360deg);
