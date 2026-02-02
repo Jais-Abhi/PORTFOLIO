@@ -162,9 +162,9 @@ const Hero = () => {
                   <FaArrowDown className='text-white flex justify-center items-center ml-2' />
 
                 </Link>
-              <button 
+              <Link href="#contact" 
               className='border-2 hover:border-gray-500 px-4 py-1.5 rounded-lg bg-gray-100 text-black  '  >
-               <span className='mr-1' >👋</span> Let's Connect</button>
+               <span className='mr-1' >👋</span> Let's Connect</Link>
             </div>
         </div>
     </div>
